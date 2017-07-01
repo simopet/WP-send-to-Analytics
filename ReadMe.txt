@@ -3,7 +3,7 @@ Contributors: simone.p
 Tags: Google Analytics, events, tracking
 Requires at least: 4.0.1
 Tested up to: 4.8
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 Donate: https://www.paypal.me/simonepetrucci
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -14,6 +14,8 @@ WP send to Analytics lets you monitor user interactions with the content (pages,
  
 **This plugin uses the universal Google Analytics script.**
 **If you're implementing a different version of Google Analytics, or you have a custom tracker, WP send to Analytics will not work properly.**
+
+WP send to Analytics helps having better data into Google Analytics: through a more accurate monitoring of user behaviour, it reduces the number of "0 seconds sessions".
 
 The plugin automatically traks some user behaviours and sends a hit (event) to Google Analytics:
 

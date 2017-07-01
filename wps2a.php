@@ -4,7 +4,7 @@ Plugin Name: WP send to Analytics
 Plugin URI: https://wordpress.org/plugins/wp-send-to-analytics/
 Description: Send events to Google Analytics
 Author: simone.p
-Version: 1.1.1
+Version: 1.1.2
 Tested up to: 4.8
 Text Domain: wps2a
 Author URI: https://www.simonepetrucci.com
@@ -13,7 +13,7 @@ Author URI: https://www.simonepetrucci.com
 if (!defined('ABSPATH'))
     exit;
 
-define( 'WPS2A_VERSION', '1.1.1' );
+define( 'WPS2A_VERSION', '1.1.2' );
 define( 'WPS2A_DIR', plugin_dir_path( __FILE__ ) );
 define( 'WPS2A_MODULES', WPS2A_DIR .  '/modules'  );
 define( 'WPS2A_WIDGETS', WPS2A_DIR . '/widget' );
