@@ -23,10 +23,11 @@ var Utils = new Utils();
 
 function sendToAnalytics(input){
     counter = input;
+    if (wp2saLabels.tracker != '') {wp2saLabels.tracker = wp2saLabels.tracker+'.'} ;
     if (toLookFor == '#wps2a-after_content') {
-        ga('send','event', wp2saLabels.category, wp2saLabels.action, wp2saLabels.label, counter );
+        ga(wp2saLabels.tracker+'send','event', wp2saLabels.category, wp2saLabels.action, wp2saLabels.label, counter );
     } else {
-        ga('send','event', wp2saLabels.category, wp2saLabels.action, toLookFor );
+        ga(wp2saLabels.tracker+'send','event', wp2saLabels.category, wp2saLabels.action, toLookFor );
     }
 	
 }

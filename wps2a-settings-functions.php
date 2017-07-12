@@ -32,6 +32,7 @@ add_action( 'admin_init', 'wps2a_settings_init' );
 		$options = get_option('wps2a_settings');
 		if(empty($options)) {
 			$options['wps2a_enable_global_endcontent'] = '0';
+			$options['wps2a_customtracker'] = '';
 		}
 
 			add_settings_section(
@@ -50,6 +51,15 @@ add_action( 'admin_init', 'wps2a_settings_init' );
 					$options
 				);
 
+				add_settings_field(
+					'wps2a_tracker_field',
+					__( 'Enter your custom Google Analytics Tracker name (blank to use default)', 'wps2a' ),
+					'wps2a_tracker_render', //callback
+					'wps2a_plugin_page',
+					'wps2a_pluginPage_section',
+					$options
+				);
+
 	}
 
 	function wps2a_settings_section_callback(  ) {
@@ -60,11 +70,19 @@ add_action( 'admin_init', 'wps2a_settings_init' );
 	function wps2a_enable_global_endcontent_render($options) {
 		?>
 		<div class="onoffswitch">
-		<input type='checkbox' name='wps2a_settings[wps2a_enable_global_endcontent]' class="onoffswitch-checkbox" id="enable_global_endcontent" value='1' <?php if ($options['wps2a_enable_global_endcontent']==1) echo " checked='checked' "; ?> >
-		<label class="onoffswitch-label" for="enable_global_endcontent">
+		<input type='checkbox' name='wps2a_settings[wps2a_enable_global_endcontent]' class="onoffswitch-checkbox" id="wps2acb_enable_global_endcontent" value='1' <?php if ($options['wps2a_enable_global_endcontent']==1) echo " checked='checked' "; ?> >
+		<label class="onoffswitch-label" for="wps2acb_enable_global_endcontent">
 	        <span class="onoffswitch-inner"></span>
 	        <span class="onoffswitch-switch"></span>
 	    </label>
+	    </div>
+		<?php
+	}
+
+	function wps2a_tracker_render($options) {
+		?>
+		<div>
+		<input type='text' name='wps2a_settings[wps2a_customtracker]' class="" id="customtracker" value='<?php echo sanitize_text_field($options['wps2a_customtracker']); ?>'>
 	    </div>
 		<?php
 	}

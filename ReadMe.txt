@@ -3,7 +3,7 @@ Contributors: simone.p
 Tags: Google Analytics, events, tracking
 Requires at least: 4.0.1
 Tested up to: 4.8
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 Donate: https://www.paypal.me/simonepetrucci
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -21,7 +21,9 @@ The plugin automatically traks some user behaviours and sends a hit (event) to G
 
 - By default, the plugin sends an event when the user reaches the end of the content (for Pages and Posts), including a "Value" in seconds, according to the time it takes the user to reach the end, from the first scrolling.
  
-- You can ask the plugin to track the view of a custom selector, instead of the end-content one, by simply give that ID in the custom box in your posts and pages. 
+- You can ask the plugin to track the view of a custom selector, instead of the end-content one, by simply give that ID in the custom box in your posts and pages. This is useful to track buttons, for example.
+
+- Starting from version 1.1.3 you can use WP send to Analytics even if you're using a custom Google Analytics tracker. Please use this option only if you really know what you're doing ;)
 
  
 == Installation ==
@@ -48,6 +50,10 @@ The plugins will be monitoring the content, and will push an event on Google Ana
  
 == Changelog ==
  
+= 1.1.3 =
+* Added stylish buttons instead of checkboxes 
+* Added option for custom Google Analytics tracker 
+
 = 1.1.1 =
 * Minor fixes to options
 

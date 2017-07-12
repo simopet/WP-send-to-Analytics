@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP send 2 Analytics\n"
 "POT-Creation-Date: 2017-06-29 11:52+0200\n"
-"PO-Revision-Date: 2017-06-29 11:54+0200\n"
+"PO-Revision-Date: 2017-07-01 12:08+0200\n"
 "Language-Team: simone\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,7 +21,7 @@ msgstr "Interazioni"
 
 #: enqueue.php:9
 msgid "Element in view"
-msgstr "Elemento nella schermo"
+msgstr "Elemento nello schermo"
 
 #: enqueue.php:10
 msgid "End content reached"
