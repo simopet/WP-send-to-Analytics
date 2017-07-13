@@ -3,7 +3,7 @@ Contributors: simone.p
 Tags: Google Analytics, events, tracking
 Requires at least: 4.0.1
 Tested up to: 4.8
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 Donate: https://www.paypal.me/simonepetrucci
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -49,6 +49,9 @@ The plugins will be monitoring the content, and will push an event on Google Ana
  
  
 == Changelog ==
+
+= 1.1.4 =
+* Minor fixes
  
 = 1.1.3 =
 * Added stylish buttons instead of checkboxes 
